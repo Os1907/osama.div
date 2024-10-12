@@ -9,8 +9,44 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        main:"#040615",
+        main2:"#0b2142"
+      },
+      animation: {
+        opacity: "opacity 5s ease-in-out infinite", 
+        flip: "flip 6s infinite steps(2, end)",
+        rotate: "rotate 3s linear infinite both",
+        border: 'border 6s ease-in-out infinite',
+      },
+      keyframes: {
+        opacity: {
+          '0%': {
+            opacity: "1",
+          },
+          '50%': {
+            opacity: "0.5"
+          },
+          '75%': {
+            opacity: "0"
+          },
+          '100%': {
+            opacity: "1"
+          },
+        },
+        flip: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
+        rotate: {
+          to: {
+            transform: "rotate(90deg)",
+          },
+        },
+        border: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
       },
     },
   },
