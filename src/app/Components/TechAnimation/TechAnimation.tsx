@@ -24,35 +24,13 @@ const technicalSkills = [
 
 const TechAnimation = () => {
     return (
-        // <div id="Skills" className="flex MyGradient overflow-hidden ">
-           
-        //     <motion.div
-        //         initial={{ x: `60%` }}
-        //         animate={{ x: `-60%` }}
-        //         transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
-        //         className="flex flex-shrink-0 gap-x-5  overflow-hidden"
-        //     >
-        //         { technicalSkills.map((tech, index) => (
-        //             <div key={index}>
-        //             <p  className='text-sm lg:text-base flex items-center text-white bg-stone-100/5  font-medium backdrop-blur  w-auto rounded-full   border border-[#ffffff1f] animate-border bg-gradient-to-r from-stone-100/5  via-stone-100/10  to-main2 bg-[length:400%_400%]  px-5 my-4 py-2 '>
-        //             <span className=" mx-1">
-
-        //                 {tech.icon}
-        //             </span>
-        //             {tech.skill}
-
-        //             </p>
-        //             </div>
-        //         )) }
-        //     </motion.div>
-
-        // </div>
-        <div id="Skills" className="flex flex-col MyGradient overflow-hidden ">
+       
+        <div  className="flex flex-col MyGradient overflow-hidden ">
            
             <motion.div
-                initial={{ x: `60%` }}
-                animate={{ x: `-60%` }}
-                transition={{ duration:25, repeat: Infinity, ease: "linear" }}
+                // initial={{ x: `60%` }}
+                // animate={{ x: `-60%` }}
+                // transition={{ duration:15, repeat: Infinity, ease: "linear" }}
                 className="flex flex-wrap justify-center lg:mx-20 mx-4 gap-x-5  overflow-hidden"
             >
                 { technicalSkills.toSpliced(8).map((tech, index) => (
@@ -71,9 +49,9 @@ const TechAnimation = () => {
 
   
             <motion.div
-                initial={{ x: `-60%` }}
-                animate={{ x: `60%` }}
-                transition={{ duration:25, repeat: Infinity, ease: "linear" }}
+                // initial={{ x: `-60%` }}
+                // animate={{ x: `60%` }}
+                // transition={{ duration:15, repeat: Infinity, ease: "linear" }}
                 className="flex flex-wrap justify-center lg:mx-20 mx-4 gap-x-5  overflow-hidden"
             >
                 { technicalSkills.toSpliced(0,8).map((tech, index) => (

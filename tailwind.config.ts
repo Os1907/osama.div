@@ -17,6 +17,7 @@ const config: Config = {
         flip: "flip 6s infinite steps(2, end)",
         rotate: "rotate 3s linear infinite both",
         border: 'border 6s ease-in-out infinite',
+        width: 'width 6s ease-in infinite'
       },
       keyframes: {
         opacity: {
@@ -47,6 +48,12 @@ const config: Config = {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
         },
+        width:{
+          '0%': { width: '0px' },
+          '50%': { width: '50px' },
+          '75%': { width: '75px' },
+          '100%': { width: '128px' },
+        }
       },
     },
   },

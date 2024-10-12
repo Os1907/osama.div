@@ -4,11 +4,12 @@ import ButtonAnimation from '../ButtonAnimation/ButtonAnimation'
 import { RiDownloadCloud2Fill } from 'react-icons/ri'
 import Link from 'next/link'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import Image from 'next/image'
 
 const Hero = () => {
   const greeting = 'Hey there! 👋'
   const titleOne = 'I am  Osama Mohamed,'
-  const titleTwo = `A creative and passionate front-end developer with a growing interest in full-stack development. 
+  const titleTwo = `A creative and passionate front-end developer with a growing interest in MERN-stack development. 
             With a strong foundation in technologies like React.js, Next.js, JavaScript, and TypeScript, I enjoy creating seamless 
             and dynamic user experiences. Currently, I'm expanding my expertise into backend development, focusing on Node.js, Express, 
             and MongoDB as I work towards becoming a proficient MERN stack developer.`
@@ -36,9 +37,17 @@ const Hero = () => {
   return (
     <>
       <div id='About' className=' grid grid-cols-2 mx-4 lg:mx-20   '>
-        <div className="col-span-2  text-white flex flex-col justify-center items-center min-h-screen ">
-          <TextAnimation Class=" mb-2 lg:mb-3 mt-10 text-sm md:text-base lg:text-xl  " text={greeting} />
-          <TextAnimation Class="text-xl lg:text-5xl font-semibold text-center mb-2 lg:mb-3" text={titleOne} />
+        
+        <div className="col-span-2  text-white flex flex-col justify-center items-center min-h-screen relative ">
+          <div className='relative w-auto'>
+
+          <TextAnimation Class=" mb-2  mt-10 text-sm md:text-base lg:text-xl  " text={greeting} />
+          <div className="absolute -top-7 left-1/2 -translate-x-1/2 bg-stone-100/5  backdrop-blur   rounded-full   border border-[#ffffff1f] animate-border bg-gradient-to-r from-stone-100/5  via-stone-100/10  to-main2 bg-[length:400%_400%]">
+      <Image src="/me.png" alt="me" width={300} height={300} className='h-16 w-22 object-cover rounded-full border-2 lg:border-4 border-main2' />
+
+    </div>
+          </div>
+          <TextAnimation Class="text-2xl lg:text-6xl font-semibold text-center mb-2 lg:mb-3" text={titleOne} />
           <TextAnimation Class="text-base lg:text-3xl font-medium text-center" text={titleTwo} />
           <div className='flex justify-center gap-x-2 flex-wrap '>
             {
@@ -48,7 +57,7 @@ const Hero = () => {
               )
             }
           </div>
-
+   
         </div>
       </div>
 
