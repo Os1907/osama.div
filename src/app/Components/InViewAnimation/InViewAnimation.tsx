@@ -11,7 +11,7 @@ const InViewAnimation = ({ children, dir }:Iprop) => {
     const isInView = useInView(ref, { once: false });
   
     return (
-        <div ref={ref}>
+        <div ref={ref} className='overflow-hidden'>
           <div
             style={{
               transform: isInView ? "none" : `translateX(${dir})`,

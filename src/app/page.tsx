@@ -8,21 +8,33 @@ import UnderLine from "./Components/StylesComponents/UnderLine";
 import TechAnimation from "./Components/TechAnimation/TechAnimation";
 import TextAnimation from "./Components/TextAnimation/TextAnimation";
 import InViewAnimation from "./Components/InViewAnimation/InViewAnimation";
+import Card from "./Components/Card/Card";
 
 export default function Home() {
   return (
-  <main className="bg-gradient-to-b from-main2 via-main  to-main min-h-screen w-full relative ">
-    <Stars/>
-    <Navbar/>
-    <Hero/>
-    <WhatIdo/>
-    <InViewAnimation dir="-200%">
+    <main className="bg-gradient-to-b from-main2 via-main  to-main min-h-screen w-full relative ">
+      <Stars />
+      <Navbar />
+      <Hero />
+      <WhatIdo />
+      <InViewAnimation dir="-200%">
+        <div className='min-h-screen flex flex-col justify-center '>
+          <div>
 
-    <TextAnimation Class="text-3xl lg:text-6xl font-bold text-center mt-5 mb-1 text-white uppercase" text={"Technical Skills"} />
-    <UnderLine/>
-    <TechAnimation/>
-    </InViewAnimation>
-    
-  </main>
+            <TextAnimation Class="text-4xl lg:text-6xl font-bold text-center  mb-1 text-white uppercase" text={"Technical Skills"} />
+            <UnderLine />
+            <TechAnimation />
+          </div>
+
+        </div>
+      </InViewAnimation>
+      <InViewAnimation dir="200%">
+
+        <TextAnimation Class="text-4xl lg:text-6xl font-bold text-center  mb-1 text-white uppercase" text={"Projects"} />
+        <UnderLine />
+        <Card />
+      </InViewAnimation>
+
+    </main>
   );
 }

@@ -81,7 +81,7 @@ const WhatIdo = () => {
   ]
   return (
     <>
-      <section id='Skills' className='mx-4 lg:mx-20 mt-4 lg:mt-10 overflow-hidden'>
+      <section id='Skills' className='mx-4 lg:mx-20 min-h-screen m t-4 lg:m t-10 overflow-hidden flex items-center'>
 
         
         <div className='flex justify-center   gap-4  my-5 lg:flex-row flex-col   '>

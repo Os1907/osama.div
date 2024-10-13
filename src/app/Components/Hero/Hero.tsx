@@ -47,8 +47,8 @@ const Hero = () => {
 
     </div>
           </div>
-          <TextAnimation Class="text-2xl lg:text-6xl font-semibold text-center mb-2 lg:mb-3" text={titleOne} />
-          <TextAnimation Class="text-base lg:text-3xl font-medium text-center" text={titleTwo} />
+          <TextAnimation Class="text-2xl lg:text-4xl font-semibold text-center mb-2 lg:mb-3" text={titleOne} />
+          <TextAnimation Class="text-base lg:text-2xl font-medium text-center" text={titleTwo} />
           <div className='flex justify-center gap-x-2 flex-wrap '>
             {
               buttons.map((el) => <ButtonAnimation key={`buttonAnimation+${el.time}`} time={el.time}>
