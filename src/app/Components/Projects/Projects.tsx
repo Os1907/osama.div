@@ -46,7 +46,7 @@ const Projects = () => {
                 <p className='text-xs lg:text-sm '>
                   {project.description}
                 </p>
-                <div className='my-2 flex flex-wrap'>
+                <div className='my-2 flex flex-wrap justify-center lg:justify-start'>
                   {project.tools.split(',').map((tools, i) => <span key={`${project.name}${tools}${i}`} className='text-[8px] lg:text-[10px]    text-white bg-stone-100/5  rounded-2xl backdrop-blur   border border-[#ffffff1f] animate-border bg-gradient-to-r from-stone-100/5  via-stone-100/10  to-main2 bg-[length:400%_400%] m-1 px-2 py-1'>{tools}</span>)}
 
                 </div>
