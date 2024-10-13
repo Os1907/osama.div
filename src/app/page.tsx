@@ -8,7 +8,8 @@ import UnderLine from "./Components/StylesComponents/UnderLine";
 import TechAnimation from "./Components/TechAnimation/TechAnimation";
 import TextAnimation from "./Components/TextAnimation/TextAnimation";
 import InViewAnimation from "./Components/InViewAnimation/InViewAnimation";
-import Card from "./Components/Card/Card";
+import Projects from "./Components/Projects/Projects";
+import Contact from "./Components/Contact/Contact";
 
 export default function Home() {
   return (
@@ -28,13 +29,9 @@ export default function Home() {
 
         </div>
       </InViewAnimation>
-      <InViewAnimation dir="200%">
-
-        <TextAnimation Class="text-4xl lg:text-6xl font-bold text-center  mb-1 text-white uppercase" text={"Projects"} />
-        <UnderLine />
-        <Card />
-      </InViewAnimation>
-
+        <Projects />
+        <Contact/>
+      
     </main>
   );
 }

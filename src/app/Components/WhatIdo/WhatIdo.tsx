@@ -8,7 +8,7 @@ import { useInView } from 'framer-motion'
 
 function Section({ children }: { children: React.ReactNode }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
 
   return (
     <div ref={ref}>
@@ -26,7 +26,7 @@ function Section({ children }: { children: React.ReactNode }) {
 }
 function SectionLeft({ children }: { children: React.ReactNode }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
 
   return (
     <div ref={ref}>
@@ -86,7 +86,7 @@ const WhatIdo = () => {
         
         <div className='flex justify-center   gap-4  my-5 lg:flex-row flex-col   '>
           {
-            services.map((el, i) => <div key={el.id} className={` min-h-max  lg:min-h-96 flex ${i % 2 === 0 ? "items-start" : "items-end"}  `}>
+            services.map((el, i) => <div key={el.id} className={` min-h-max flex-1  lg:min-h-96 flex ${i % 2 === 0 ? "items-start" : "items-end"}  `}>
                {i % 2 === 0 ?
                 <Section><Text title={el.title} text={el.text} /> </Section>
                 :

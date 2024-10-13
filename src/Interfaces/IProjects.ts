@@ -7,6 +7,7 @@ export interface IProjects {
     live:string,
     repo:string,
     image:StaticImageData,
+    status:string,
     tools:string
 }
 
