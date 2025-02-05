@@ -4,7 +4,7 @@ import "./Styles/background.css"
 
 
 export const metadata: Metadata = {
-  title: "Osama.dev",
+  title: "Osama Mohamed",
   description: "Front End Developer",
 };
 

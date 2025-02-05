@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react'
 
 const Navbar = () => {
-    const links= ["About","Skills", "Projects",  "Contact"];
+    const links= ["About","Skills" ,"Experience", "Projects",  "Contact"];
   return (
     <>
     <nav className=' fixed top-10 w-full z-50 '>

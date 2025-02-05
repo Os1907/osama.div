@@ -7,6 +7,7 @@ import { Stars } from '../Stars/stars'
 import TextAnimation from '../TextAnimation/TextAnimation'
 import UnderLine from '../StylesComponents/UnderLine'
 import InViewAnimation from '../InViewAnimation/InViewAnimation'
+import HandTitle from '../StylesComponents/HandTitle'
 
 
 const Projects = () => {
@@ -15,9 +16,12 @@ const Projects = () => {
       <InViewAnimation dir="200%">
 
     <section id='Projects' className='relative pb-64'>
-    <TextAnimation Class="text-4xl lg:text-6xl font-bold text-center  mb-1 text-white uppercase" text={"Projects"} />
-    <UnderLine />
-      <Stars/>
+    {/* <TextAnimation Class="text-4xl lg:text-6xl font-bold text-center  mb-1 text-white uppercase" text={"Projects"} /> */}
+      <div className='mt-20 mb-10'>
+    
+                <HandTitle title={"Projects"} />
+                </div>
+      {/* <Stars/> */}
       <div className=' lg:mx-20 mx-4  flex flex-col items-center gap-y-5 mt-5   '>
         {
           projects.map((project, index) => (
