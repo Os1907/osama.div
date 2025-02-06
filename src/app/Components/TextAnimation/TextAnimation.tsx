@@ -17,7 +17,7 @@ const TextAnimation = ({text,Class}:Prop) => {
           animate={{ opacity: 1 }}
           transition={{
             duration: 2,
-            delay: i / 10
+            delay: i / 40
           }}
           key={i}
         >

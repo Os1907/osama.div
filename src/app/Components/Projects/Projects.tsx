@@ -3,11 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FaGithub, FaLink } from 'react-icons/fa'
-import { Stars } from '../Stars/stars'
-import TextAnimation from '../TextAnimation/TextAnimation'
-import UnderLine from '../StylesComponents/UnderLine'
 import InViewAnimation from '../InViewAnimation/InViewAnimation'
 import HandTitle from '../StylesComponents/HandTitle'
+import ButtonAnimation from '../ButtonAnimation/ButtonAnimation'
+import { contactButtons } from '../Hero/Hero'
 
 
 const Projects = () => {
@@ -15,14 +14,14 @@ const Projects = () => {
     <>
       <InViewAnimation dir="200%">
 
-    <section id='Projects' className='relative pb-64'>
+    <section id='Projects' className='relative'>
     {/* <TextAnimation Class="text-4xl lg:text-6xl font-bold text-center  mb-1 text-white uppercase" text={"Projects"} /> */}
-      <div className='mt-20 mb-10'>
+      <div className='mt-20 pb-10'>
     
                 <HandTitle title={"Projects"} />
                 </div>
       {/* <Stars/> */}
-      <div className=' lg:mx-20 mx-4  flex flex-col items-center gap-y-5 mt-5   '>
+      <div className=' lg:mx-20 mx-4  flex flex-col items-center gap-y-5 py-5     '>
         {
           projects.map((project, index) => (
             <div key={index + project.name} className=' gap-3 w-3/4  lg:w-1/2 flex flex-col lg:flex-row  items-center justify-center gap-x-5   '>
@@ -60,6 +59,22 @@ const Projects = () => {
             </div>
           ))
         }
+
+      </div>
+      <div className='lg:mx-20 mx-4 text-white text-center handFont'>
+        <p>
+        You can find more projects
+        </p>
+        <div className='flex justify-center gap-x-2 flex-wrap handFont '>
+            {
+              contactButtons.filter(button => 
+                button.tag.props.href === 'https://github.com/Os1907/'
+              ).map((el) => <ButtonAnimation key={`buttonAnimation+${el.time}`} time={0}>
+                {el.tag}
+              </ButtonAnimation>
+              )
+            }
+          </div>
 
       </div>
     </section>

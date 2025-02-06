@@ -25,13 +25,13 @@ const technicalSkills = [
 const TechAnimation = () => {
     return (
        
-        <div  className="flex flex-col MyGradient overflow-hidden ">
+        <div  className="flex flex-col MyGradient overflow-hidden  ">
            
             <motion.div
                 // initial={{ x: `60%` }}
                 // animate={{ x: `-60%` }}
                 // transition={{ duration:15, repeat: Infinity, ease: "linear" }}
-                className="flex flex-wrap justify-center lg:mx-20 mx-4 gap-x-3 lg:gap-x-5  overflow-hidden"
+                className="flex flex-wrap justify-center lg:mx-20 mx-4 gap-x-3 lg:gap-x-5  overflow-hidden "
             >
                 { technicalSkills.toSpliced(8).map((tech, index) => (
                     <div key={index}>

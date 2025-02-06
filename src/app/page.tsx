@@ -3,10 +3,10 @@
 import Hero from "./Components/Hero/Hero";
 import WhatIdo from "./Components/WhatIdo/WhatIdo";
 import Navbar from "./Components/Navbar/Navbar";
-import { Stars } from "./Components/Stars/stars"
-import UnderLine from "./Components/StylesComponents/UnderLine";
+// import { Stars } from "./Components/Stars/stars"
+// import UnderLine from "./Components/StylesComponents/UnderLine";
+// import TextAnimation from "./Components/TextAnimation/TextAnimation";
 import TechAnimation from "./Components/TechAnimation/TechAnimation";
-import TextAnimation from "./Components/TextAnimation/TextAnimation";
 import InViewAnimation from "./Components/InViewAnimation/InViewAnimation";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
@@ -21,14 +21,11 @@ export default function Home() {
 
       <Navbar />
       <Hero />
+      <InViewAnimation dir="50%">
       <WhatIdo />
-      <InViewAnimation dir="-200%">
         <div className=' flex flex-col justify-center '>
           <div>
-
-            {/* <TextAnimation Class="text-4xl lg:text-6xl font-bold text-center  mb-1 text-white uppercase" text={"Technical Skills"} />
-            <UnderLine /> */}
-            <div className='mt-20 mb-10'>
+            <div className='mt-20 mb-5 lg:mb-10'>
 
             <HandTitle title={"Technical Skills"} />
             </div>
@@ -37,6 +34,10 @@ export default function Home() {
 
         </div>
       </InViewAnimation>
+
+      {/* <InViewAnimation dir="-200%">
+      </InViewAnimation> */}
+
         <Projects />
         <Contact/>
       
