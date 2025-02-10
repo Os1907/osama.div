@@ -7,11 +7,11 @@ import Navbar from "./Components/Navbar/Navbar";
 // import UnderLine from "./Components/StylesComponents/UnderLine";
 // import TextAnimation from "./Components/TextAnimation/TextAnimation";
 import TechAnimation from "./Components/TechAnimation/TechAnimation";
-import InViewAnimation from "./Components/InViewAnimation/InViewAnimation";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Dots from "./Components/Common/Dots/Dots";
 import HandTitle from "./Components/StylesComponents/HandTitle";
+import StepsPage from "./Components/Career/StepsPage";
 
 export default function Home() {
   return (
@@ -21,7 +21,8 @@ export default function Home() {
 
       <Navbar />
       <Hero />
-      <InViewAnimation dir="50%">
+      {/* <InViewAnimation dir="50%">
+      </InViewAnimation> */}
       <WhatIdo />
         <div className=' flex flex-col justify-center '>
           <div>
@@ -33,13 +34,13 @@ export default function Home() {
           </div>
 
         </div>
-      </InViewAnimation>
 
       {/* <InViewAnimation dir="-200%">
       </InViewAnimation> */}
-
+<StepsPage/>
         <Projects />
-        <Contact/>
+      {/* <Dots/> */}
+          <Contact/>
       
     </main>
   );

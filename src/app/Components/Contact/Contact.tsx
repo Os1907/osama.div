@@ -1,5 +1,4 @@
 import React from 'react'
-import InViewAnimation from '../InViewAnimation/InViewAnimation'
 import Link from 'next/link'
 import { BiPhone } from 'react-icons/bi'    
 import ButtonAnimation from '../ButtonAnimation/ButtonAnimation'
@@ -30,8 +29,9 @@ const Contact = () => {
   return (
     <>
 
-   <InViewAnimation dir="-200%">
+   {/* <InViewAnimation dir="-200%">
 
+    </InViewAnimation> */}
     <section id='Contact' className='relative pt-10 mx-5'>
                   <HandTitle title={'Get in Touch'}/>
       <div className='flex justify-center gap-x-2 flex-wrap text-white  pt-8   '>
@@ -46,7 +46,6 @@ const Contact = () => {
             }
           </div>
     </section>
-    </InViewAnimation>
 
 
 

@@ -1,9 +1,9 @@
+'use client'
 import { projects } from '@/lib/projects'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FaGithub, FaLink } from 'react-icons/fa'
-import InViewAnimation from '../InViewAnimation/InViewAnimation'
 import HandTitle from '../StylesComponents/HandTitle'
 import ButtonAnimation from '../ButtonAnimation/ButtonAnimation'
 import { contactButtons } from '../Hero/Hero'
@@ -12,8 +12,6 @@ import { contactButtons } from '../Hero/Hero'
 const Projects = () => {
   return (
     <>
-      <InViewAnimation dir="200%">
-
     <section id='Projects' className='relative'>
     {/* <TextAnimation Class="text-4xl lg:text-6xl font-bold text-center  mb-1 text-white uppercase" text={"Projects"} /> */}
       <div className='mt-20 pb-10'>
@@ -37,11 +35,11 @@ const Projects = () => {
                   </Link>
                 
                 </div>
-                <span className='absolute bottom-3 text-nowrap left-1/2 -translate-x-1/2  uppercase text-[8px] text-white bg-stone-100/5  rounded-2xl backdrop-blur   border border-[#ffffff1f] animate-border bg-gradient-to-r from-stone-100/5  via-main2  to-main2 bg-[length:400%_400%] px-2 py-1'>
+                <span className='absolute bottom-3 text-nowrap handFont left-1/2 -translate-x-1/2  uppercase text-[8px] text-white bg-stone-100/5  rounded-2xl backdrop-blur   border border-[#ffffff1f] animate-border bg-gradient-to-r from-stone-100/5  via-main2  to-main2 bg-[length:400%_400%] px-2 py-1'>
                   {project.status}
                 </span>
               </div>
-              <div className='flex flex-col  text-white flex-1 text-center lg:text-start'>
+              <div className='flex flex-col  text-white flex-1 text-center lg:text-start handFont'>
                 <h5 className='text-lg md:text-xl lg:text-2xl font-bold '>
                   {project.name}
                   <span className={`text-[10px] md:text-xs  mx-1 ${project.subTitle.length > 50 ? 'block lg:inline' : ''} `}>{project.subTitle}</span>
@@ -78,7 +76,7 @@ const Projects = () => {
 
       </div>
     </section>
-    </InViewAnimation>
+    
 
     </>
   )

@@ -6,7 +6,7 @@ export const indieFlower = localFont({
   variable: '--font-indie-flower', 
 });
 export default  function HandTitle({title}: {title: string}) {
-    return <h2 className={`${indieFlower.className} text-4xl lg:text-6xl text-center text-white`}>
+    return <p className={`${indieFlower.className} text-4xl lg:text-6xl text-center text-white`}>
       {title}
-    </h2>
+    </p>
   }

@@ -7,7 +7,7 @@ interface Prop{
 }
 const TextAnimation = ({text,Class}:Prop) => {
     const title = text.split(" ");
-
+// console.log(title)
   return (
     <>
    <div className={`${Class}`}>
@@ -21,7 +21,7 @@ const TextAnimation = ({text,Class}:Prop) => {
           }}
           key={i}
         >
-          {el}{" "}
+          {el}
         </motion.span>
       ))}
       
