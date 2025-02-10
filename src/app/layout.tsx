@@ -6,6 +6,9 @@ import "./Styles/background.css"
 export const metadata: Metadata = {
   title: "Osama Mohamed",
   description: "Front End Developer",
+  icons: {
+    icon: "/me.png", 
+  },
 };
 
 export default function RootLayout({
